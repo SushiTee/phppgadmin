@@ -75,6 +75,9 @@ class Connection {
 		$description = "PostgreSQL {$version}";
 
 		// Detect version and choose appropriate database driver
+		if (substr($version, 0, 2) == '10') {
+			return 'Postgres10';
+		}
 		switch (substr($version,0,3)) {
                         case '9.5': return 'Postgres'; break;
 			case '9.4': return 'Postgres94'; break;
