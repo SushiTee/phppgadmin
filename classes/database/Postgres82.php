@@ -18,14 +18,6 @@ class Postgres82 extends Postgres83 {
 		'NOT SIMILAR TO' => 'i', '~' => 'i', '!~' => 'i', '~*' => 'i', '!~*' => 'i',
 		'IS NULL' => 'p', 'IS NOT NULL' => 'p', 'IN' => 'x', 'NOT IN' => 'x');
 
-	/**
-	 * Constructor
-	 * @param $conn The database connection
-	 */
-	function Postgres82($conn) {
-		$this->Postgres($conn);
-	}
-
 	// Help functions
 
 	function getHelpPages() {

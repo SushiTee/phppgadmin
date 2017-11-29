@@ -165,14 +165,6 @@ class Postgres extends ADODB_base {
 	// The default type storage
 	var $typStorageDef = 'plain';
 
-	/**
-	 * Constructor
-	 * @param $conn The database connection
-	 */
-	function Postgres($conn) {
-		$this->ADODB_base($conn);
-	}
-
 	// Formatting functions
 
 	/**

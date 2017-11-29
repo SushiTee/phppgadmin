@@ -24,15 +24,6 @@ class Postgres74 extends Postgres80 {
 		'schema' => array('CREATE', 'USAGE', 'ALL PRIVILEGES')
 	);
 
-
-	/**
-	 * Constructor
-	 * @param $conn The database connection
-	 */
-	function Postgres74($conn) {
-		$this->Postgres80($conn);
-	}
-
 	// Help functions
 
 	function getHelpPages() {

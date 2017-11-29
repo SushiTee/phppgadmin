@@ -12,14 +12,6 @@ class Postgres91 extends Postgres92 {
 
 	var $major_version = 9.1;
 
-	/**
-	 * Constructor
-	 * @param $conn The database connection
-	 */
-	function Postgres91($conn) {
-		$this->Postgres($conn);
-	}
-
 	// Help functions
 
 	function getHelpPages() {

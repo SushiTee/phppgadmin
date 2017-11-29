@@ -26,14 +26,6 @@ class Postgres84 extends Postgres90 {
 		'column' => array('SELECT', 'INSERT', 'UPDATE', 'REFERENCES','ALL PRIVILEGES')
 	);
 
-	/**
-	 * Constructor
-	 * @param $conn The database connection
-	 */
-	function Postgres84($conn) {
-		$this->Postgres($conn);
-	}
-
 	// Help functions
 
 	function getHelpPages() {

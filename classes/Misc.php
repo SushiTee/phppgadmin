@@ -11,10 +11,6 @@
 		// Tracking string to include in forms
 		var $form;
 
-		/* Constructor */
-		function Misc() {
-		}
-
 		/**
 		 * Checks if dumps are properly set up
 		 * @param $all (optional) True to check pg_dumpall, false to just check pg_dump
@@ -2013,6 +2009,8 @@
 					}
 
 					foreach ($columns as $column_id => $column) {
+						if (!isset($column['class']))
+							$column['class'] = '';
 
 						// Apply default values for missing parameters
 						if (isset($column['url']) && !isset($column['vars'])) $column['vars'] = array();

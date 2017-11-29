@@ -7,11 +7,6 @@
 	 class GUI {
 
 		/**
-		 *Constructor
-		 */
-		function GUI () {}
-		 
-		/**
 		 * Prints a combox box
 		 * @param $arrOptions associative array storing options and values of combo should be Option => Value
 		 * @param $szName string to specify the name of the form element

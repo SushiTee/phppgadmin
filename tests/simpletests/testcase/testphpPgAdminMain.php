@@ -26,7 +26,7 @@ require_once('Common/CommonGroupTest.php');
  */
 class phpPgAdminGroupTest extends GroupTest
 {
-    function phpPgAdminGroupTest() 
+    function __construct()
     {
 		$this->GroupTest('phpPgAdmin automation test.');
 		$this->addTestClass(new ServerGroupTest());

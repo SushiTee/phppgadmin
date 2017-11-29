@@ -24,7 +24,7 @@ require_once('ConversionTest.php');
  */
 class SchemasGroupTest extends GroupTest
 {
-    function SchemasGroupTest() 
+    function __construct() 
     {
     	$this->GroupTest('Schema management group test.');
 

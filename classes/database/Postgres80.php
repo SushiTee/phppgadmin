@@ -46,14 +46,6 @@ class Postgres80 extends Postgres81 {
 		'WIN1256' => 'CP1256'
 	);
 
-	/**
-	 * Constructor
-	 * @param $conn The database connection
-	 */
-	function Postgres80($conn) {
-		$this->Postgres81($conn);
-	}
-
 	// Help functions
 
 	function getHelpPages() {
